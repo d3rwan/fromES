@@ -1,0 +1,21 @@
+{
+    "port" : 80,
+    "logs" : {
+        "directory" : "logs",
+        "filename" : "fromES.log",
+        "level" : "debug",
+        "console" : true,
+        "file" : false
+    },
+    "elasticsearch" : {
+        "host" : "localhost:9200",
+        "sniffOnStart" : false,
+        "maxRetries" : 30
+    },
+    "indexs" : {
+    	"persons" : {
+    		"index" : "persons",
+    		"type" : "person"
+    	}
+    }
+}
