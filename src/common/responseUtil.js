@@ -65,7 +65,7 @@ function defaultRes(res) {
     return function(err, data) {
         if (err) {
             onError(res, HTTP_CODE.INTERNAL_ERROR, {
-                "returnCode" : RETURN_CODE.ERR_TEC_SEARCH_ENGINE_UNREACHABLE,
+                "returnCode" : RETURN_CODE.TECH_ERROR,
                 "message" : err.message,
                 "severity" : SEVERITY.ERROR
             });
